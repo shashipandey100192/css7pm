@@ -1,0 +1,10 @@
+.second
+{
+    color:green;
+    background-color: blueviolet;
+    padding:10px;
+    border:10px solid red;
+}
+h2{
+    color:orangered !important;
+}

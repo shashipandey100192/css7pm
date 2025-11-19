@@ -1,0 +1,38 @@
+.page
+{
+    width:1200px;
+    height: auto;
+    border:1px solid red;
+    background-color: antiquewhite;
+}
+.page>div
+{
+    border:10px solid green;
+    padding:8px;
+    float: left;
+    width:172px;
+    background-color: aquamarine;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+
+.myflex
+{
+    width:1200px;
+    height: auto;
+    border:1px solid red;
+    background-color: antiquewhite;
+    display: flex;
+    margin-top:50px;
+}
+.myflex>div
+{
+    border:2px solid green;
+    padding:8px;
+    background-color: aquamarine;
+    height: 100px;
+    flex:1;
+    margin:10px;
+
+}
