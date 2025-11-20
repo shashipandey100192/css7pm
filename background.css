@@ -1,0 +1,59 @@
+*
+{
+    margin:0 auto;
+    padding:0;
+}
+div{
+    width:1200px;
+    height: 600px;
+    border:1px solid red;
+    margin-top:20px;
+}
+
+.first
+{
+    /* background-color: tomato; */
+    /* background-color: #9f93ef; */
+    /* background-color: rgb(200,150,20); */
+    background-color: rgb(10%,50%,60%);
+}
+
+.second
+{
+    /* background:linear-gradient(red,orange,green); */
+    /* background:linear-gradient(red 50%,orange,green); */
+    /* background:-webkit-linear-gradient(left,red,orange,green);
+    background:-moz-linear-gradient(left,red,orange,green);
+    background:-o-linear-gradient(left,red,orange,green);
+    background:-ms-linear-gradient(left,red,orange,green); */
+    /* background:-webkit-linear-gradient(100deg,red,orange,green); */
+    background:-webkit-radial-gradient(top right,red,orange,green);
+}
+.third
+{
+    background-image:url("./back.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+
+}
+.third>h1{
+    text-align: center;
+    font-size: 80px;
+}
+
+
+.fourth
+{
+    background: orange url("./back.jpg");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+
+
+}
+.fourth>h1{
+    text-align: center;
+    font-size: 80px;
+    color:red;
+}
