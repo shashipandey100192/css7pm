@@ -1,0 +1,74 @@
+*
+{
+    margin:0 auto;
+    padding:0;
+}
+:root{
+    --w:1200px;
+    --h:100%;
+    --r:rgb(255, 0, 212);
+    --g:green;
+    --cw:white;
+    --br:1px solid blue;
+}
+
+.page
+{
+    width:var(--w);
+    height: var(--h);
+    border:var(--br);
+    padding:50px;
+    box-sizing: border-box;
+}
+ul
+{
+    list-style-type:none;
+}
+ul li::before
+{
+    content: "\2605";
+    color:var(--r);
+    margin-right: 5px;
+}
+ul li::after
+{
+    content: "-------------------------------- \261B";
+    color:var(--r);
+}
+.mytips
+{
+    height: 100px;
+    width: 400px;
+    background-color: var(--r);
+    color:var(--cw);
+    margin-left:0;
+    padding:10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: none;
+}
+.mytips::before{
+    content: "";
+    border-left:0px solid transparent;
+    border-right:20px solid var(--r);
+    border-top:20px solid transparent;
+    border-bottom:20px solid transparent;
+    width:0px;
+    height:0px;
+    position: absolute;
+    margin-left:-25px;
+    margin-top:20px;
+}
+input[type="checkbox"]:checked + .mytips
+{
+    display: inline-block;
+}
+
+
+img
+{
+    width: 100%;
+    /* filter: grayscale(100%) blur(3px); */
+    /* filter:brightness(1.8) contrast(200%); */
+    filter:sepia(100%);
+}
