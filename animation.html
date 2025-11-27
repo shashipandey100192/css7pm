@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:orange;
+            font-size: 50px;
+            /* animation-name: abc;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in-out;
+            animation-direction: alternate;
+            animation-delay: 3s; */
+
+            animation:abc 2s infinite alternate ease-in-out 3s;
+
+        }
+        @keyframes xyz {
+            from{}
+            to{margin-left:1000px;color:red;background-color: blue}
+        }
+
+
+    @keyframes abc {
+        0%{}
+        30%{margin-left:800px;margin-top:0px}
+        50%{margin-left:800px;margin-top:200px}
+        80%{margin-left:0px;margin-top:200px;font-size: 80px;}
+        100%{margin-left:0px;margin-top:0px}
+
+    }        
+        
+    div{
+        width:200px;
+        height: 200px;
+        background-color: orange;
+        color:red;
+        text-align: center;
+        transition-duration: 2000ms;
+    }
+div:hover
+{
+    transition:all;
+    width:800px;
+    height: 500px;
+    transition-duration: 1s;
+}
+
+
+    </style>
+</head>
+<body>
+
+<div> use of transfrom</div>
+
+
+<h1>heading one</h1>
+
+
+
+    
+</body>
+</html>
