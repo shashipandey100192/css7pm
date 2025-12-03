@@ -1,0 +1,127 @@
+*
+{
+    margin:0 auto;
+    padding:0;
+}
+.mega
+{
+    width:100%;
+    height: 60px;
+    background-color: rgb(39, 12, 12);
+    color:white;
+    position: fixed;
+    display: flex;
+}
+.sidebar
+{
+    width:60px;
+    height:100vh;
+    background-color: orange;
+    float:left;
+    position: fixed;
+    /* padding:10px; */
+    box-sizing: border-box;
+    overflow: hidden;
+    transition-duration: 300ms;
+}
+.page
+{
+    width:94.8%;
+    height: 100vh;
+    background-color: antiquewhite;
+    float:right;
+    transition-duration: 300ms;
+}
+.sidebar,.page
+{
+    margin-top:60px;
+}
+.sidebar ul
+{
+    list-style-type: none;
+    width:200px;
+}
+.sidebar li
+{
+    /* background-color: orangered; */
+    height: 40px;
+    padding:5px 0 5px 15px;
+    margin-top:2px;
+    line-height: 40px;
+}
+.sidebar i
+{
+    font-size: 25px;
+    color:white;
+    margin-right: 25px;
+    transition-duration: 300ms;
+}
+.sidebar a
+{
+    color:white;
+    text-decoration: none;
+}
+
+.sidebar:hover
+{
+    width:200px;
+    transition-duration: 300ms;
+}
+.sidebar:hover + .page
+{
+    width:83.5%;
+    transition-duration: 300ms;
+}
+.sidebar:hover i
+{
+    font-size: 20px;
+    margin-right: 10px;
+    transition-duration: 300ms;
+}
+.sidebar li:hover
+{
+    background-color: aqua;
+}
+/*------------------------------end of sidebar----------------------*/
+
+.mega section
+{
+    flex:1;
+    border:1px solid red;
+}
+.mega ul
+{
+    list-style-type: none;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    position: relative;
+}
+.mega ul li
+{
+    flex:1;
+    text-align: center;
+    position: relative;
+    /* border:1px solid red; */
+}
+.mega a
+{
+    color:white;
+    text-decoration: none;
+    background-color: tomato;
+   padding:10px;
+}
+.mega div
+{
+    width:100%;
+    height: 300px;
+    background-color: blueviolet;
+    position: fixed;
+    left:0px;
+    top:60px;
+    display: none;
+}
+.mega li:hover div
+{
+    display: block;
+}
