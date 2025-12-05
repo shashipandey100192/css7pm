@@ -1,0 +1,52 @@
+*
+{
+    margin:0 auto;
+    padding:0;
+}
+
+.slider
+{
+    width:100%;
+    height: 300px;
+    overflow: hidden;
+}
+.slider section
+{
+    width:300%;
+    height: 300px;
+    position: relative;
+    animation:abc 10s infinite alternate ease-in-out;
+}
+.slider div
+{
+    width:33.3%;
+    height: 300px;
+    float:left;
+    background-size: 100% 100%;
+    color:white;
+    text-align: center;
+    padding:20px;
+    box-sizing: border-box;
+}
+.slider div:nth-child(1)
+{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREqRp5pzb59rEoOn3Z53TmEPbqzHvqf3wj5g&s");
+}
+.slider div:nth-child(2)
+{
+    background-image: url("https://images.wallpapersden.com/image/download/love-and-nature_a2tuZmaUmZqaraWkpJRmbmdlrWZlbWU.jpg");
+}
+.slider div:nth-child(3)
+{
+    background-image: url("https://images.wallpapersden.com/image/download/4k-desert-aesthetic-cool_bWlua26UmZqaraWkpJRobWllrWdma2U.jpg");
+}
+
+
+@keyframes abc {
+    0%{left:0%}
+    33%{left:0%}
+    40%{left:-100%}
+    66%{left:-100%}
+    72%{left:-200%}
+    100%{left:-200%}
+}

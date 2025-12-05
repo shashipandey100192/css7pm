@@ -195,3 +195,8 @@ html
     scroll-behavior: smooth;
     user-select: none;
 }
+
+.manpage
+{
+    background:linear-gradient(rgb(149, 149, 232),rgb(73, 73, 245));
+}
