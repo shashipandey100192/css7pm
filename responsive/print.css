@@ -1,0 +1,69 @@
+@media print {
+*
+{
+    user-select: none;
+}
+    @page {
+        size: A4 portrait;
+    }
+
+    .row {
+        flex-direction: column;
+        border: none;
+        height: auto;
+    }
+
+    .hd {
+        display: block;
+    }
+
+    body {
+        background-color: transparent;
+    }
+
+    .row div {
+        page-break-after: always;
+        background: transparent;
+        border: none;
+    }
+
+    .row h2 {
+        background-color: transparent;
+        margin-top: 10px;
+    }
+
+    .row p {
+        margin-top: 5px;
+    }
+
+    .row img {
+        filter: blur(4px) grayscale(100%);
+    }
+
+    .onlyprint {
+        display: block;
+    }
+    header,footer
+    {
+        display: block;
+        position: fixed;
+        z-index: 99;
+    }
+    header
+    {
+        top:0;
+    }
+    footer
+    {
+        bottom:0;
+    }
+    h3{
+        display: block;
+        position: fixed;
+        z-index: 110;
+        margin-top:300px;
+        transform: rotate(-45deg);
+        opacity: 0.2;
+    }
+
+}

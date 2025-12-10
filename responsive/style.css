@@ -22,3 +22,24 @@
 {
     width: 100%;
 }
+.onlyprint
+{
+    display: none;
+}
+
+header,footer
+{
+    background-color: black;
+    color:white;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    display: none;
+}
+h3{
+    font-size: 70px;
+    text-align: center;
+    font-family: arial black;
+    text-transform: uppercase;
+    display: none;
+}
