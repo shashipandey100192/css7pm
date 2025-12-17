@@ -1,0 +1,190 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            height: 100px;
+            background-color: orange;
+            text-align: center;
+            position: absolute;
+        }
+        .first{
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+
+<h1>this is my first element</h1>
+<div class="first">this is box 1</div>
+<div>this is box 2</div>
+<div>this is box 3</div>
+    
+</body>
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,section{
+            width:100px;
+            height: 100px;
+            background-color: orange;
+            text-align: center;
+        }
+        section
+        {
+            position: relative;
+        }
+        div
+        {
+            position: relative;
+        }
+        h1{
+            position: absolute;
+            z-index: 1;
+        }
+    
+    </style>
+</head>
+<body>
+
+<h1>this is my first element<br>this is my first element<br>this is my first element<br>this is my first element<br>this is my first element<br>this is my first element<br>this is my first element<br>this is my first element<br>this is my first element<br>this is my first element<br>this is my first element<br>this is my first element<br>this is my first element<br>this is my first element<br></h1>
+<div>this is box 1</div>
+<section>one</section>
+<div>this is box 2</div>
+<div>this is box 3</div>
+
+<section>two</section>
+<section>three</section>
+<section>four</section>
+    
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0 auto;
+            padding:0;
+        }
+        div,section{
+            width:100%;
+            height: 500px;
+            background-color: orange;
+            text-align: center;
+            margin-top:50px;
+            
+        }
+        h1{
+            background-color: orangered;
+            padding:10px;
+            position: fixed;
+            top:0;
+            right: 0;
+            width: 100%;
+        }
+    
+    </style>
+</head>
+<body>
+
+
+<div>this is box 1</div>
+<section>
+    <h1>this is my first element</h1>
+</section>
+<div>this is box 2</div>
+<div>this is box 3</div>
+
+<section>two</section>
+<section>three</section>
+<section>four</section>
+    
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0 auto;
+            padding:0;
+        }
+        div,section{
+            width:100%;
+            height: 800px;
+            background-color: orange;
+            text-align: center;
+            margin-top:50px;
+            
+        }
+        h1{
+            background-color: orangered;
+            padding:10px;
+            position: sticky;
+            top:0;
+            right: 0;
+            width: 100%;
+            border:1px solid red;
+        }
+        #about
+        {
+            background:linear-gradient(orange,blue);
+        }
+        #about h1{
+            background-color: green;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+    
+    </style>
+</head>
+<body>
+
+
+<div id="home">
+    <h1>this is my Home page <a href="#about">About</a> <a href="#contact">Contact</a> <a href="#home">Home</a></h1>
+</div>
+<section id="about">
+    <h1>this is my about page <a href="#about">About</a> <a href="#contact">Contact</a> <a href="#home">Home</a></h1>
+</section>
+<div id="contact">
+    <h1>this is my contact page <a href="#about">About</a> <a href="#contact">Contact</a> <a href="#home">Home</a></h1>
+</div>
+<div>this is box 3</div>
+
+<section>two</section>
+<section>three</section>
+<section>four</section>
+    
+</body>
+</html>
