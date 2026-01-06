@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <input type="button" value="message" onclick="abc()">
+
+    <h1>this is change background using prompt</h1>
+    <script>
+
+
+        function abc() {
+            var a = prompt("enter color");
+            if (confirm("do you want to change background color")) {
+                var b = prompt("enter text color");
+                if (confirm(" do you want to change color")) {
+                    document.bgColor = a;
+                    document.fgColor = b;
+                }
+                
+            }
+            else {
+                alert("can't change your bgcolor");
+            }
+            console.log(a);
+            console.log(typeof (a));
+        }
+
+
+    </script>
+
+</body>
+
+</html>
