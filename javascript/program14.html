@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Resume Container */
+        .resume-container {
+            max-width: 800px;
+            background: #fff;
+            margin: auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header .title {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            margin-bottom: 10px;
+        }
+
+        .item h3 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .item p,
+        .item ul {
+            margin-left: 15px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        @media print {
+
+            input {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body onresize="abc()">
+
+    <input type="button" value="resum generator" onclick="xyz()">
+
+    <div class="resume-container">
+    </div>
+
+    <h1>sdfsdf</h1>
+
+
+    <script>
+        function xyz() {
+            var name, post, email, skills, phone;
+
+            name = prompt("enter name");
+            email = prompt("enter email id");
+            skills = prompt("enter skills");
+            phone = prompt("enter phone no");
+            var page = document.querySelector('.resume-container');
+            page.innerHTML = ` <header>
+        <h1>${name}</h1>
+        <p class="title">Web Developer</p>
+        <p>Email: ${email} | Phone: ${phone}</p>
+    </header>
+
+    <section class="section">
+        <h2>About Me</h2>
+        <p>I’m a passionate web developer with experience in building responsive websites using HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section class="section">
+        <h2>Education</h2>
+        <div class="item">
+            <h3>Bachelor of Technology (Computer Science)</h3>
+            <p>University Name — 2019–2023</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Experience</h2>
+        <div class="item">
+            <h3>Front-End Developer Intern</h3>
+            <p>Company ABC — June 2024 – Dec 2024</p>
+            <ul>
+                <li>Developed responsive UI with HTML, CSS & JavaScript.</li>
+                <li>Worked with team to improve website performance.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Skills</h2>
+        <p>${skills}• CSS • JavaScript • Bootstrap • Git</p>
+    </section>
+
+    <footer>
+        <p>Thank you for reviewing my resume!</p>
+        <input type="button" value="print" onclick="pageprint()">
+    </footer>`
+
+        }
+
+        function pageprint() {
+            window.print();
+        }
+
+
+
+        function abc() {
+            var myscreen = window.screen;
+            console.log(myscreen);
+            var hed = document.querySelectorAll("h1");
+
+            hed[0].innerHTML = myscreen.width;
+
+            if (myscreen.width >= 1000) {
+                document.bgColor = "red";
+            }
+            else {
+                document.bgColor = "white";
+            }
+
+        }
+
+        abc();
+    </script>
+
+</body>
+
+</html>

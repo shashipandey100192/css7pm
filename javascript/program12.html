@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1></h1>
+
+    
+<script>
+
+// var mydate =new Date();
+
+// console.log(mydate);
+// console.log(typeof(mydate));
+
+function mydate()
+{
+    var a = new Date();
+    var b = a.getMinutes();
+    var c = a.getSeconds();
+    var h = a.getHours();
+    var dt = h + ":"+ b + ":"+ c;
+var myheading = document.getElementsByTagName("h1");
+    myheading[0].innerHTML = dt;
+
+}
+mydate();
+
+setInterval("mydate()",1000);
+
+</script>
+
+
+</body>
+</html>
