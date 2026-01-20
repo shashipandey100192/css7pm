@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul
+        {
+            list-style-type: none;
+            width: 300px;
+        }
+        input
+        {
+            padding:5px;
+            margin:5px;
+        }
+        *
+        {
+            margin:0 auto;
+            padding:0;
+        }
+        ul p
+        {
+            color:red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+<ul>
+    <li><input type="text" id="user" placeholder="username">
+        <p id="error1">user name error</p>
+    </li>
+    
+    <li><input type="password" id="pass" placeholder="password">
+        <p id="error2"> password is required</p>
+    </li>
+    <li><input type="button" value="login" onclick="myform()"></li>
+</ul>
+
+    
+<script>
+
+function myform()
+{
+    var juser,jpass,jserror1,jserror2;
+        juser = document.getElementById('user');
+        jpass = document.getElementById('pass');
+        jserror1 = document.getElementById('error1');
+        jserror2 = document.getElementById('error2');
+        
+        if(juser.value=="")
+        {
+            jserror1.style.display="block";
+        }
+
+        if(jpass.value=="")
+        {
+            jserror2.style.display="block";
+        }
+
+        juser.addEventListener("click",()=>{
+            // jserror1.style.display="none";
+            jserror1.removeAttribute("style");
+        });
+
+        jpass.addEventListener("click",()=>{
+            jserror2.removeAttribute("style");
+        });
+
+        jpass.addEventListener("input",()=>{
+            var a = jpass.value;
+                if(a.length>10)
+                {
+                    jserror2.removeAttribute("style");
+                    jserror2.innerHTML="password is too strong";
+                    jserror2.style.color="green";
+                }
+                else if(a.length>=5)
+                {
+                     jserror2.style.display="block";
+                     jserror2.innerHTML="password is average";
+                    jserror2.style.color="orange";
+                }
+                else if(a.length>0)
+                {
+                    jserror2.innerHTML="password is too small";
+                    jserror2.style.color="red";
+                }
+                else
+                {
+                     jserror2.innerHTML="password is required";
+
+                }
+
+        });
+
+
+        
+
+}
+
+
+
+</script>    
+    
+</body>
+</html>
